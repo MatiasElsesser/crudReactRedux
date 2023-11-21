@@ -35,9 +35,9 @@ export function ListOfUsers () {
         </TableHead>
 
         <TableBody>
-          {users.map((item) => (
+          {users.map((item, index) => (
             <TableRow key={item.name}>
-              <TableCell>{item.id}</TableCell>
+              <TableCell>{index + 1}</TableCell>
               <TableCell style={
                 {
                   display: 'flex',
